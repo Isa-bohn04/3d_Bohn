@@ -12,23 +12,19 @@
     <p>Confira nossos produtos abaixo</p>
   </header>
 
-  <main class="produtos">
-    <div class="produto">
-      <img src="https://via.placeholder.com/200" alt="Produto 1" />
-      <h2>Produto 1</h2>
-      <p>Descrição do produto 1</p>
-      <span class="preco">R$ 49,90</span>
-      <button onclick="contatarWhatsApp('Produto 1')">Comprar</button>
-    </div>
+<!-- Produto SEM preço -->
+<div class="produto sem-preco">
+  <img src="https://via.placeholder.com/200" alt="Produto 2" />
+  <h2>Produto 2</h2>
+  <p>Descrição do produto 2</p>
+  <!-- Sem <span class="preco"> -->
+  <div class="botoes-contato">
+    <button onclick="contatarWhatsApp('Produto 2')">WhatsApp</button>
+    <button onclick="abrirInstagram()">Instagram</button>
+  </div>
+</div>
 
-    <div class="produto">
-      <img src="https://via.placeholder.com/200" alt="Produto 2" />
-      <h2>Produto 2</h2>
-      <p>Descrição do produto 2</p>
-      <span class="preco">R$ 79,90</span>
-      <button onclick="contatarWhatsApp('Produto 2')">Comprar</button>
-    </div>
-    
+   
     <!-- Você pode adicionar mais produtos copiando a estrutura acima -->
   </main>
 
