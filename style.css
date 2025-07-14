@@ -13,7 +13,22 @@ body {
   background-color: #5c9eff;
   height: 80px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.titulo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  color: white;
+  text-shadow:
+    2px 2px 0 #1d4ed8,   /* camada azul escura */
+    4px 4px 0 #1e40af,   /* profundidade */
+    6px 6px 0 #1e3a8a;   /* sombra mais escura */
+  letter-spacing: 2px;
+}
+
 
 .container {
   max-width: 1200px;
