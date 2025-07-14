@@ -1,64 +1,63 @@
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
-  background: #fff;
-  color: #333;
+  box-sizing: border-box;
 }
 
-header {
-  background-color: #5599ff;
-  color: white;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.topo {
+  background-color: #5c9eff;
+  height: 80px;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
   text-align: center;
-  padding: 2rem 1rem;
-}
-
-.logo-area {
-  display: flex;
-  justify-content: center;
-  padding: 2rem 0;
 }
 
 .logo {
-  max-width: 90%;
-  height: auto;
+  background-color: #d3d3d3;
+  height: 200px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 
 .produtos {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .produto {
-  background: #f1f1f1;
-  padding: 1rem;
-  border-radius: 10px;
-  text-align: center;
-  width: 200px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
 }
 
-.produto img {
+.imagem {
+  background-color: #d3d3d3;
   width: 100%;
-  border-radius: 8px;
-}
-
-.botoes-contato {
+  height: 150px;
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.icon {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.2s ease;
-}
-
-.icon:hover {
-  transform: scale(1.2);
+.icones img {
+  width: 30px;
+  margin: 0 5px;
+  cursor: pointer;
 }
