@@ -56,8 +56,10 @@ body {
   margin-bottom: 10px;
 }
 
-.icones img {
-  width: 30px;
-  margin: 0 5px;
-  cursor: pointer;
+.icones {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  
 }
+
