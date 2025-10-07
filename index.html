@@ -6,20 +6,9 @@
   <title>Site Moderno</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    /* Reset básico */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
-    }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Roboto',sans-serif; }
+    body { background-color:#f0f8ff; color:#333; }
 
-    body {
-      background-color: #f0f8ff; /* Azul clarinho */
-      color: #333;
-    }
-
-    
     /* Menu */
     nav {
       width: 100%;
@@ -33,108 +22,21 @@
       z-index: 1000;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 2rem;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
+    nav a { color:white; text-decoration:none; margin-left:2rem; font-weight:500; transition:0.3s; }
+    nav a:hover { text-decoration: underline; }
 
     /* Carrossel */
-    .carousel {
-      position: relative;
-      width: 90%;
-      max-width: 900px;
-      margin: 2rem auto;
-      overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-
-    .carousel-track {
-      display: flex;
-      transition: transform 0.5s ease;
-    }
-
-    .carousel-item {
-      min-width: 100%;
-      background-color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2rem;
-      padding: 4rem 0;
-    }
-
-    .carousel-button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0, 170, 255, 0.7);
-      border: none;
-      color: white;
-      font-size: 2rem;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
-      border-radius: 50%;
-    }
-
-    .carousel-button.prev {
-      left: 1rem;
-    }
-
-    .carousel-button.next {
-      right: 1rem;
-    }
+    .carousel { position: relative; width: 90%; max-width:900px; margin:2rem auto; overflow:hidden; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1);}
+    .carousel-track { display:flex; transition: transform 0.5s ease;}
+    .carousel-item { min-width:100%; background-color:white; display:flex; align-items:center; justify-content:center; font-size:2rem; padding:4rem 0;}
+    .carousel-button { position:absolute; top:50%; transform:translateY(-50%); background-color: rgba(0,170,255,0.7); border:none; color:white; font-size:2rem; padding:0.5rem 1rem; cursor:pointer; border-radius:50%;}
+    .carousel-button.prev { left:1rem; }
+    .carousel-button.next { right:1rem; }
 
     /* Cards */
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      width: 90%;
-      margin: 2rem auto;
-    }
-
-    .card {
-      background-color: white;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    /* Footer */
-    footer {
-      background-color: #00aaff;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-      margin-top: 2rem;
-    }
-
-    footer a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
+    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; width:90%; margin:2rem auto; }
+    .card { background-color:white; padding:1.5rem; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); text-align:center; transition: transform 0.3s; }
+    .card:hover { transform: translateY(-5px); }
 
   </style>
 </head>
@@ -144,8 +46,8 @@
   <nav>
     <div class="logo"><strong>MeuSite</strong></div>
     <div class="menu">
-      <a href="#home">Home</a>
-      <a href="#contato">Contato</a>
+      <a href="index.html">Home</a>
+      <a href="contato.html">Contato</a>
     </div>
   </nav>
 
@@ -168,24 +70,14 @@
     <div class="card">Exemplo 4</div>
   </section>
 
-  <!-- Footer -->
-  <footer id="contato">
-    <p>Siga-nos:</p>
-    <a href="https://instagram.com" target="_blank">Instagram</a>
-    <a href="https://wa.me/559999999999" target="_blank">WhatsApp</a>
-  </footer>
-
   <script>
-    // JS do carrossel
     const track = document.querySelector('.carousel-track');
     const slides = Array.from(track.children);
     const nextButton = document.querySelector('.carousel-button.next');
     const prevButton = document.querySelector('.carousel-button.prev');
     let currentIndex = 0;
 
-    function updateCarousel() {
-      track.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
+    function updateCarousel() { track.style.transform = `translateX(-${currentIndex * 100}%)`; }
 
     nextButton.addEventListener('click', () => {
       currentIndex = (currentIndex + 1) % slides.length;
