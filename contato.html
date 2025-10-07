@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Roboto',sans-serif; }
+    body { background-color:#f0f8ff; color:#333; }
+
+    nav {
+      width: 100%;
+      background-color: #00aaff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav a { color:white; text-decoration:none; margin-left:2rem; font-weight:500; transition:0.3s; }
+    nav a:hover { text-decoration: underline; }
+
+    .contato-container {
+      width: 90%;
+      max-width: 600px;
+      margin: 3rem auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .contato-container h1 { margin-bottom: 1rem; color:#00aaff; }
+    .contato-container p { margin-bottom: 1rem; }
+
+    .contato-container a {
+      display: inline-block;
+      margin: 0.5rem 1rem;
+      color:white;
+      background-color:#00aaff;
+      padding:0.5rem 1rem;
+      border-radius:5px;
+      text-decoration:none;
+      transition:0.3s;
+    }
+    .contato-container a:hover { background-color:#008ecc; }
+
+  </style>
+</head>
+<body>
+
+  <!-- Menu -->
+  <nav>
+    <div class="logo"><strong>MeuSite</strong></div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="contato.html">Contato</a>
+    </div>
+  </nav>
+
+  <section class="contato-container">
+    <h1>Entre em Contato</h1>
+    <p>Siga-nos ou envie uma mensagem:</p>
+    <a href="https://instagram.com" target="_blank">Instagram</a>
+    <a href="https://wa.me/559999999999" target="_blank">WhatsApp</a>
+  </section>
+
+</body>
+</html>
