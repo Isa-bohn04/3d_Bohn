@@ -56,6 +56,9 @@ nav {
   box-shadow: 0 5px 25px rgba(0,0,0,0.15);
 }
 
+.carousel-item:nth-child(2) img {
+  object-position: bottom;
+}
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease;
