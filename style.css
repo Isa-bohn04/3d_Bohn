@@ -59,6 +59,7 @@ nav {
 .carousel-item:nth-child(2) img {
   object-position: bottom;
 }
+
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease;
@@ -71,10 +72,10 @@ nav {
 
 .carousel-item img {
   width: 100%;
-  height: 420px;
+  height: 500px; /* 🔹 Aumentado de 420px para 500px */
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
 }
 
 .carousel-button {
@@ -117,23 +118,24 @@ nav {
 .card {
   background-color: white;
   padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.12);
   text-align: center;
   transition: 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
 }
 
 .card img {
   width: 100%;
-  height: 180px;
+  height: 230px; /* 🔹 Aumentado de 180px para 230px */
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 12px; /* um pouco mais quadrado */
   margin-bottom: 1rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
 .card p {
