@@ -49,11 +49,11 @@ nav {
 .carousel {
   position: relative;
   width: 90%;
-  max-width: 900px;
-  margin: 2rem auto;
+  max-width: 1000px;
+  margin: 3rem auto;
   overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
 }
 
 .carousel-item:nth-child(2) img {
@@ -72,9 +72,9 @@ nav {
 
 .carousel-item img {
   width: 100%;
-  height: 500px; /* 🔹 Aumentado de 420px para 500px */
+  height: 500px; /* 🔹 Aumentado */
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 16px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.25);
 }
 
@@ -86,7 +86,7 @@ nav {
   border: none;
   color: white;
   font-size: 1.8rem;
-  padding: 0.7rem 1rem;
+  padding: 0.8rem 1rem;
   cursor: pointer;
   border-radius: 50%;
   transition: 0.3s;
@@ -109,39 +109,44 @@ nav {
 /* CARDS */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2.5rem;
   width: 90%;
-  margin: 2rem auto;
+  margin: 3rem auto;
 }
 
 .card {
   background-color: white;
-  padding: 1.5rem;
-  border-radius: 14px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+  padding: 2rem; /* 🔹 Mais espaçamento interno */
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
   text-align: center;
   transition: 0.3s ease;
+  min-height: 360px; /* 🔹 Altura aumentada */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
 }
 
 .card img {
   width: 100%;
-  height: 230px; /* 🔹 Aumentado de 180px para 230px */
+  height: 230px; /* 🔹 Aumentado */
   object-fit: cover;
-  border-radius: 12px; /* um pouco mais quadrado */
+  border-radius: 12px;
   margin-bottom: 1rem;
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
 .card p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #555;
   margin-bottom: 0.8rem;
+  line-height: 1.5;
 }
 
 /* WhatsApp Icon */
